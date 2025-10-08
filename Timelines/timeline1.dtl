@@ -1,0 +1,41 @@
+[background arg="res://Assets/background_images/bg uni hall.png" fade="0.3"]
+
+join ellie (turn) center [animation="Fade In"]
+You: Hey there!
+ellie (think wink): Hmm… interesting…
+ellie (glad): Hello!
+
+update ellie (listen)
+You: Are you new here? Need a tour guide or something?
+ellie (glad): Oh yes, please! I'm trying to find the History class.
+
+You: Haha, you’ve got the wrong floor! This is Science central. History’s down below.
+ellie (listen): Ohh… got it. Thanks a bunch!
+
+update ellie (listen)
+You: By the way… what’s your name, stranger?
+ellie (listen): I’m Ellie! And you are?
+
+You: I’m {ur_name}, second-year Physics nerd. You might spot me around my lab… or struggling not to fail.
+ellie (glad): Oh wow! Thanks again, {ur_name}!
+
+You: Alright, go find your class before the professor starts hunting you.
+ellie (turn): Haha, yeah, I better run!
+
+label 12121 (fdafadf)
+leave ellie
+[wait time="0.9"]
+join lora center [animation="Fade In"]
+
+lora (/Smile Gaze): Ooooh… looks like someone’s caught the flirting bug!
+You: When did *you* get here?
+
+lora (/teasing): Since I saw you checking her out with those “I’m-smooth” eyes.
+You: Hey, that’s none of your business!
+
+lora (/laughing): Haha! Someone’s blushing!
+You: Ugh… whatever!
+leave lora [animation="Fade Out"]
+
+You: Oh gosh… she’s always like this, just like when we were kids!
+You: But… kinda cute. I better head to class before I get distracted again.

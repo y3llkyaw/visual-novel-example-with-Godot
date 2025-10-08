@@ -1,0 +1,5 @@
+if {first_day} == true:
+	[text_input text="Enter your name" var="ur_name" placeholder="Name" default="Myoe Lin"]
+	You: First day of school! Let’s gooo!
+	You: Hmm... I should probably change, but some music from my laptop first won’t hurt.
+	set {first_day} = false

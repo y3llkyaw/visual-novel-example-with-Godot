@@ -1,0 +1,40 @@
+[gd_scene load_steps=3 format=3 uid="uid://b8lqq8xf3gg1x"]
+
+[ext_resource type="Script" uid="uid://dr6oxxkja0o5q" path="res://script/bedroom.gd" id="1_8a21g"]
+[ext_resource type="Texture2D" uid="uid://dqjey3tlj0g1y" path="res://Assets/background_images/bedroom.png" id="1_m2d67"]
+
+[node name="Bedroom" type="Node2D"]
+script = ExtResource("1_8a21g")
+
+[node name="Bedroom" type="Sprite2D" parent="."]
+position = Vector2(146.99995, 74.00002)
+scale = Vector2(0.9088541, 0.9088542)
+texture = ExtResource("1_m2d67")
+
+[node name="bed" type="TextureButton" parent="."]
+offset_left = -246.9508
+offset_top = 80.77606
+offset_right = 146.24683
+offset_bottom = 256.3701
+rotation = -0.5295907
+
+[node name="Button" type="Button" parent="."]
+offset_left = -128.0
+offset_top = 292.0
+offset_right = 73.612915
+offset_bottom = 342.0
+theme_override_colors/font_color = Color(0.9882353, 0.972549, 0.93333334, 1)
+text = "Leave Bedroom"
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(110, 46)
+
+[node name="laptop" type="TextureButton" parent="."]
+offset_left = 275.0
+offset_top = 78.0
+offset_right = 431.0
+offset_bottom = 220.0
+
+[connection signal="pressed" from="bed" to="." method="_on_bed_pressed"]
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="laptop" to="." method="_on_laptop_pressed"]

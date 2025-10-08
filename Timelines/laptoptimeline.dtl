@@ -1,0 +1,9 @@
+if {wifi_password} == false:
+	You: Ugh, Erik changed the Wi-Fi password again… Why does he do this every week?
+	You: Guess I’ll have to bug him about it later. No music for now—off to Physics class.
+else:
+	You: Wait, what was the Wi-Fi password again?
+	You: 3 r i k & L 0 r 4... huh?
+	You: Hold on—those look like names.
+	You: Oh my god... Erik is totally in love with Lora!
+	set {wifi} = true

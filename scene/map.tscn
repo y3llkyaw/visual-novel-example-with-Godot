@@ -1,0 +1,62 @@
+[gd_scene load_steps=5 format=3 uid="uid://dib6mgpgwypr2"]
+
+[ext_resource type="Script" uid="uid://baidugiu3a71i" path="res://script/map.gd" id="1_wpp1k"]
+[ext_resource type="Texture2D" uid="uid://d05lhht1xg6f0" path="res://Assets/map_images/map.png" id="2_h0nt1"]
+[ext_resource type="AudioStream" uid="uid://chvarpoxr025o" path="res://Assets/audio/Pufino - Enjoy (freetouse.com).mp3" id="3_h0nt1"]
+[ext_resource type="PackedScene" uid="uid://ief3j8arr8wg" path="res://scene/overlay.tscn" id="4_nf54y"]
+
+[node name="Map" type="Node2D"]
+script = ExtResource("1_wpp1k")
+
+[node name="Map" type="Sprite2D" parent="."]
+position = Vector2(561, 374)
+scale = Vector2(0.9947914, 0.9947917)
+texture = ExtResource("2_h0nt1")
+
+[node name="boydorm" type="TextureButton" parent="."]
+offset_left = 396.0
+offset_top = 506.0
+offset_right = 551.0
+offset_bottom = 627.0
+
+[node name="girldorm" type="TextureButton" parent="."]
+offset_left = 901.0
+offset_top = 221.0
+offset_right = 1057.0
+offset_bottom = 312.0
+
+[node name="football" type="TextureButton" parent="."]
+offset_left = 35.518085
+offset_top = 554.4695
+offset_right = 204.33897
+offset_bottom = 663.07513
+rotation = 0.5737453
+
+[node name="history" type="TextureButton" parent="."]
+offset_left = 322.99997
+offset_top = 45.999992
+offset_right = 451.84433
+offset_bottom = 192.90378
+rotation = 0.5737453
+
+[node name="science" type="TextureButton" parent="."]
+offset_left = 788.99994
+offset_top = 99.99997
+offset_right = 916.8225
+offset_bottom = 182.23062
+rotation = 0.5737453
+
+[node name="bgMusic" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_h0nt1")
+volume_db = -20.0
+pitch_scale = 1.3
+autoplay = true
+parameters/looping = true
+
+[node name="Overlay" parent="." instance=ExtResource("4_nf54y")]
+
+[connection signal="pressed" from="boydorm" to="." method="_on_boydorm_pressed"]
+[connection signal="pressed" from="girldorm" to="." method="_on_girldorm_pressed"]
+[connection signal="pressed" from="football" to="." method="_on_football_pressed"]
+[connection signal="pressed" from="history" to="." method="_on_history_pressed"]
+[connection signal="pressed" from="science" to="." method="_on_science_pressed"]

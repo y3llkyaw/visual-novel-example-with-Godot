@@ -1,0 +1,34 @@
+[gd_scene load_steps=4 format=3 uid="uid://dvnwapxv7u42p"]
+
+[ext_resource type="Texture2D" uid="uid://c31wk4qps7elr" path="res://Assets/background_images/erik room.png" id="1_mmh1w"]
+[ext_resource type="Script" uid="uid://c86ie5hug6y5y" path="res://script/erikroom.gd" id="1_nsueq"]
+[ext_resource type="Texture2D" uid="uid://l8urwivtwf04" path="res://Assets/character_images/smile 2.png" id="3_lkq23"]
+
+[node name="Erikroom" type="Node2D"]
+script = ExtResource("1_nsueq")
+
+[node name="ErikRoom" type="Sprite2D" parent="."]
+position = Vector2(600.25, 352.00003)
+scale = Vector2(0.92447925, 0.92447925)
+texture = ExtResource("1_mmh1w")
+
+[node name="Button" type="Button" parent="."]
+offset_left = 307.0
+offset_top = 543.0
+offset_right = 490.87097
+offset_bottom = 603.0
+text = "Leave Room"
+
+[node name="Smile2" type="Sprite2D" parent="."]
+position = Vector2(675.99994, 420.99997)
+scale = Vector2(0.41435188, 0.41435197)
+texture = ExtResource("3_lkq23")
+
+[node name="Erik" type="TextureButton" parent="Smile2"]
+offset_left = -214.79309
+offset_top = -533.3629
+offset_right = 183.41919
+offset_bottom = 567.15076
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Smile2/Erik" to="." method="_on_erik_pressed"]

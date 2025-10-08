@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://ief3j8arr8wg"]
+
+[ext_resource type="Texture2D" uid="uid://dk3d3470swtpq" path="res://Assets/map_images/Gemini_Generated_Image_db906qdb906qdb90-Photoroom.png" id="1_xg4ao"]
+
+[node name="Overlay" type="Node2D"]
+
+[node name="GeminiGeneratedImageDb906Qdb906Qdb90Photoroom" type="Sprite2D" parent="."]
+position = Vector2(1062.25, 549.9844)
+scale = Vector2(0.1118164, 0.11233529)
+texture = ExtResource("1_xg4ao")
