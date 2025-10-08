@@ -35,7 +35,7 @@ res://
 │   ├── bg/
 │   │   ├── bg_unihall.png
 │   │   └── bg_dorm.png
-│   ├── music/
+│   ├── audio/
 │   │   └── bg_music.mp3
 │   └── characters/
 │       ├── ellie.png
